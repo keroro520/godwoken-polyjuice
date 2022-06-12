@@ -312,7 +312,7 @@ struct evmc_tx_context get_tx_context(struct evmc_host_context* context) {
   memcpy(ctx.tx_origin.bytes, g_tx_origin.bytes, 20);
 
   /* gas price = 1 */
-  ctx.tx_gas_price.bytes[31] = 0x01;
+  // ctx.tx_gas_price.bytes[31] = 0x01;
 
   ctx.block_number = context->gw_ctx->block_info.number;
   /*
